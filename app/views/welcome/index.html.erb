@@ -63,11 +63,63 @@
     <div>
       <card>
         <section>
-          <p>Primeiro parágrafo do conteúdo</p>
-          <p>Segundo parágrafo do conteúdo</p>
+          <p>Backend Developer</p>
+          <p>Projetos em equipe</p>
         </section>
-        <img src="icone.png" alt="Ícone">
+        <i class="fa-solid fa-users-between-lines"></i>
+      </card>
+      <card>
+        <section>
+          <p>Freelancer</p>
+          <p>Projetos pessoais</p>
+        </section>
+        <i class="fa-solid fa-code"></i>
       </card>
     </div>
   </section>
+  <section>
+    <h5>projects( )</h5>
+    <div class="carousel">
+      <div class="slide">
+        <%= link_to "https://www.google.com.br", target: "_blank" do %>
+          <%= image_tag "capture.png" %>
+        <% end %>
+      </div>
+      <div class="slide">
+        <%= link_to "https://www.google.com.br", target: "_blank" do %>
+          <%= image_tag "insomnia_api.png" %>
+        <% end %>
+      </div>
+      <div class="slide">
+        <%= link_to "https://www.google.com.br", target: "_blank" do %>
+          <%= image_tag "capture.png" %>
+        <% end %>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2>Philipe Rodrigues</h2>
+        <p>Desenvolvedor Backend</p>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h3>Contato</h3>
+        <p>Email: dev.philipe@outlook.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2023 PHILIPE RODRIGUES. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
