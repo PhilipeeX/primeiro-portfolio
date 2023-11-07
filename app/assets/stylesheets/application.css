@@ -48,15 +48,6 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-    font-family: 'Roboto', sans-serif;
-}
 ol, ul {
     list-style: none;
 }
@@ -72,12 +63,23 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(130deg, #000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100vw;
-    background: linear-gradient(130deg, #000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
+    min-height: 100vh;
 }
 .core {
     max-width: 1720px;
@@ -303,7 +305,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    transition: 1s ease-in-out;
 }
+.about-me-cards:hover {
+    transition: 100ms ease-in-out;
+    background: var(--Gray-1);
+    border: 1px solid var(--cor-secundaria);
+ }
+
+.about-me-cards:hover section {
+    stroke-dashoffset: -480;
+}
+
 .about-me-card-titles {
     color: #FFF;
     font-family: Courier Prime, monospace;
@@ -433,13 +447,31 @@ header {
 
 .footer-bottom {
     border-top: 1px solid white;
+    padding: 0.5rem 0;
     width: 100%;
 }
 .footer-bottom-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-bottom-links {
     display: flex;
+    gap: 3rem;
+}
+.footer-bottom-link {
+    color: #FFF;
+}
+.footer-bottom-icons {
+    display: flex;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+.footer-bottom-circles {
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
 }
