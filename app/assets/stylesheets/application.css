@@ -90,6 +90,8 @@ header {
 .nav-superior {
     display: flex;
     justify-content: space-between;
+    margin: 0 4rem;
+    flex-shrink: 1;
 }
 .nav-lista {
     display: flex;
@@ -98,7 +100,7 @@ header {
 }
 .first-name {
     color: var(--Gray-3);
-    font-size: 3.125rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -106,7 +108,7 @@ header {
 }
 .last-name {
     color: var(--Gray-6);
-    font-size: 3.125rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -117,7 +119,7 @@ header {
 }
 .nav-lista-links {
     color: #FFF;
-    font-size: 1.625rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -140,14 +142,14 @@ header {
     gap: 1rem;
 }
 .link-icon {
-    width: 2.125rem;
-    height: 2.125rem;
+    width: 1rem;
+    height: 1rem;
     flex-shrink: 0;
 }
 .link-text {
     text-decoration: none;
     color: #FFF;
-    font-size: 1.625rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -157,6 +159,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 8rem 3.5rem 8rem 3.5rem;
+    margin: 0 6rem;
 }
 .name-introduction {
     display: flex;
@@ -164,7 +167,7 @@ header {
 }
 .main-title {
     color: var(--Gray-5);
-    font-size: 2.4375rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -172,7 +175,7 @@ header {
 }
 .introduction-profile-name {
     color: #70FF00;
-    font-size: 4.875rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -181,7 +184,7 @@ header {
 }
 .profile-description {
     color: var(--Gray-5);
-    font-size: 3.5625rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -194,7 +197,7 @@ header {
 }
 .description-number {
     color: var(--Gray-3);
-    font-size: 6rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -202,7 +205,7 @@ header {
 }
 .introduction-description {
     color: var(--Gray-3);
-    font-size: 1.6875rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -214,18 +217,19 @@ header {
 }
 .profile-image {
     margin-right: 5rem;
-    width: 34rem;
+    width: 28rem;
     border-radius: 50%;
 }
 .ruby-image-profile {
     background-color: var(--Gray-1);
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     fill: var(--Gray-1);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
     position: absolute;
-    top: 20rem;
+    top: 18rem;
+    left: -1rem;
+    padding: 0.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,13 +237,13 @@ header {
 .rails-image-profile {
     background-color: var(--Gray-1);
     border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
+    width: 3rem;
+    height: 3rem;
     fill: var(--Gray-1);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
     position: absolute;
-    top: 25rem;
-    right: 6.8rem;
+    top: 22rem;
+    right: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,12 +254,12 @@ header {
 .linux-image-profile {
     background-color: var(--Gray-1);
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     fill: var(--Gray-1);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
     position: absolute;
-    top: 7rem;
+    top: 6rem;
     right: 5rem;
     display: flex;
     align-items: center;
@@ -272,7 +276,7 @@ header {
 }
 .section-title {
     color: var(--green);
-    font-size: 3.0625rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -283,7 +287,7 @@ header {
 }
 .about-me-description {
     color: var(--Gray-6);
-    font-size: 1.8125rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
