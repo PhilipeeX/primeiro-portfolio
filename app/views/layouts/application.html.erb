@@ -8,15 +8,31 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=Roboto:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap">
     <script defer src="https://kit.fontawesome.com/f3766a0f67.js" crossorigin="anonymous"></script>
 
   </head>
 
   <body>
+    <header>
+      <div class="header-nav">
+        <p class="page-logo">
+          <span class="logo-code"><%= '<%=' %></span>
+          <span class="logo-name">devPhilipe</span>
+          <span class="logo-code">%></span>
+        </p>
+        <i class="fa-solid fa-bars menu-icon"></i>
+      </div>
+    </header>
 
-  <div class="container">
-    <%= yield %>
-  </div>
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
 
+    <footer>
+
+    </footer>
   </body>
 </html>
