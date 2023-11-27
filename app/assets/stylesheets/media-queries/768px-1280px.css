@@ -2,4 +2,10 @@
     body {
         background: var(--Brand-1);
     }
+    .header-nav .menu-icon {
+        display: none;
+    }
+    header .header-nav a {
+        display: block;
+    }
 }
