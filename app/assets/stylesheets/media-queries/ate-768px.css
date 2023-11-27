@@ -1,23 +1,26 @@
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {*/
     body {
-        background: var(--BG-1, #131619);
+        background-color: var(--BG-1, #131619);
         font-family: IBM Plex Mono, Ubuntu, monospace;
     }
 
     header {
         display: flex;
-        padding: 0rem 1.5rem;
+        padding: 0 1.5rem;
         flex-direction: column;
         align-items: center;
         align-self: stretch;
     }
     .header-nav {
         display: flex;
-        padding: 1.5rem 0rem;
+        padding: 1.5rem 0;
         justify-content: space-between;
         align-items: center;
         align-self: stretch;
         border-bottom: 1px solid var(--Grey);
+    }
+    .header-nav a {
+        display: none;
     }
     .page-logo {
     }
@@ -38,13 +41,14 @@
     }
     .hero-section {
         display: flex;
-        padding: 4rem 0rem;
+        padding: 4rem 0;
         justify-content: center;
         align-items: flex-start;
         align-self: stretch;
     }
     .content {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -61,10 +65,10 @@
         justify-content: center;
         align-items: flex-start;
         gap: 2rem;
-        border-radius: 10rem 0rem;
+        border-radius: 10rem 0;
         border: 2px solid var(--White, #FFF);
         background: var(--BG-1, #131619);
-        box-shadow: -2px -2px 1px 0px #30F711;
+        box-shadow: -2px -2px 1px 0 #30F711;
     }
     .profile-all {
         display: flex;
@@ -147,7 +151,7 @@
     }
     .profile-labels {
         display: flex;
-        padding: 0rem 0.5rem;
+        padding: 0 0.5rem;
         justify-content: center;
         align-items: center;
         gap: 1rem;
@@ -300,11 +304,12 @@
         align-items: center;
         gap: 4rem;
         align-self: stretch;
-        background: url(<path-to-image>), lightgray 50% / cover no-repeat, #1A1E23;
+        background-color: #1A1E23;
     }
+
     .about-me-container {
         display: flex;
-        padding: 0rem 4rem;
+        padding: 0 4rem;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -339,7 +344,6 @@
         padding: 1.5rem;
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
         border-radius: 2.5rem;
         background: var(--BG-1, #131619);
     }
@@ -351,4 +355,527 @@
         font-weight: 400;
         line-height: 1.25rem;
     }
-}
+    .about-me-description-title {
+        color: var(--Brand-1, var(--White, #30F711));
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.625rem;
+        text-transform: capitalize;
+    }
+    .about-me-description * {
+        margin-bottom: 1rem;
+    }
+    .about-me-image {
+        display: flex;
+        width: 17rem;
+        height: 22.75rem;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 1rem;
+        background: url("coding-image.jpg"), lightgray 20%;
+        background-position: 30% 60%;
+    }
+    .skills {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        padding: 4rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        background-color: #292F36;
+    }
+    .skills::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.1;
+        background-image: url("ruby-code-bg-small.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+    }
+    .skills-container {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        align-self: stretch;
+    }
+    .skills-title-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+    }
+    .skills-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .skills-title h3 {
+        color: var(--Brand-1, #30F711);
+        font-family: Ubuntu;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.5rem;
+        text-transform: capitalize;
+    }
+    .skills-description {
+        flex: 1 0 0;
+        color: var(--White, var(--White, #FFF));
+        text-align: center;
+        font-family: IBM Plex Mono;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem; /* 125% */
+    }
+    .skills-cards-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5.625rem;
+    }
+    .skills-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .skill-card {
+        display: flex;
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 0.5rem;
+        background: var(--Brand-2, #44FF27);
+    }
+    .skill-card-icons {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill-card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .skill-card-title {
+        width: 15rem;
+        color: var(--BG-1, #131619);
+        text-align: center;
+        font-family: IBM Plex Mono;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+        text-transform: capitalize;
+    }
+    .skill-card-description {
+        color: var(--Grey, #43454D);
+        text-align: center;
+        font-family: IBM Plex Mono;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem; /* 125% */
+    }
+    .skills-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .skills-icons-line {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+    .skill-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .skill-icons {
+        display: flex;
+        padding: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5rem;
+    }
+
+    .skill-icon-html {
+        background: #E54F26;
+    }
+
+    .skill-icon-css {
+        background: #0C73B8;
+    }
+
+    .skill-icon-js {
+        background: #E7A020;
+    }
+
+    .skill-icon-react {
+        background: #28A9E0;
+    }
+
+    .skill-text {
+        font-family: IBM Plex Mono;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.625rem;
+        text-transform: capitalize;
+    }
+    .skill-text-html {
+        color: #E54F26;
+    }
+
+    .skill-text-css {
+        color: #0C73B8;
+    }
+
+    .skill-text-js {
+        color: #E7A020;
+    }
+
+    .skill-text-react {
+        color: #28A9E0;
+    }
+    .works {
+        display: flex;
+        padding: 4rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        align-self: stretch;
+        background-color: #1A1E23;
+    }
+    .works-title-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        align-self: stretch;
+    }
+    .works-title-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .works-title-icon h4 {
+        color: var(--Brand-1, #30F711);
+        font-family: Ubuntu;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.5rem;
+        text-transform: capitalize;
+    }
+    .works-title-icon svg {
+        height: 0;
+        align-self: stretch;
+        stroke-width: 2px;
+        stroke: var(--Brand-1, #30F711);
+    }
+    .works-description {
+        flex: 1 0 0;
+        color: var(--White, var(--White, #FFF));
+        text-align: center;
+        font-family: IBM Plex Mono;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+    }
+    .works-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .works-wrapper-button {
+        display: flex;
+        padding: 0.5rem;
+        align-items: center;
+        border-radius: 3rem;
+        background: var(--BG-1, #131619);
+    }
+    .works-button {
+        display: flex;
+        width: 1.25rem;
+        height: 1.25rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .works-button svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        flex-shrink: 0;
+    }
+    .works-projects {
+        width: 18.59156rem;
+        height: 12.375rem;
+        flex-shrink: 0;
+        overflow: hidden;
+        border-radius: 0.5rem;
+    }
+    .works-projects-image {
+
+        background-size: cover;
+        background-position: center center;
+    }
+    .contact {
+        display: flex;
+        padding: 4rem 1.5rem 2rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        align-self: stretch;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        align-self: stretch;
+    }
+    .contact-title-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+    }
+    .contact-title-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .contact-title-icon h5 {
+        color: var(--Brand-1, #30F711);
+        font-family: Ubuntu;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.5rem;
+        text-transform: capitalize;
+    }
+    .contact-title-icon svg {
+        height: 0;
+        align-self: stretch;
+        stroke-width: 2px;
+        stroke: var(--Brand-1, #30F711);
+    }
+    .contact-description p {
+        flex: 1 0 0;
+        color: var(--White, var(--White, #FFF));
+        text-align: center;
+        font-family: IBM Plex Mono;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem; /* 125% */
+    }
+    .send-message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        align-self: stretch;
+    }
+    .send-message-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        align-self: stretch;
+    }
+    .send-message-title {
+        display: flex;
+        padding: 1rem 2.5rem;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2rem 0;
+        border: 2px solid var(--Brand-1, #30F711);
+    }
+    .send-message-title h6 {
+        color: var(--Brand-1, #30F711);
+        text-align: center;
+        font-family: IBM Plex Mono;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem; /* 133.333% */
+        text-transform: capitalize;
+    }
+    .send-message-info {
+        display: flex;
+        padding: 0 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        align-self: stretch;
+    }
+    .message-name-email {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        align-self: stretch;
+    }
+    .send-messages {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex: 1 0 0;
+    }
+    .send-messages > p:first-of-type,
+    .message-content-message > p:first-of-type {
+        flex: 1 0 0;
+        color: var(--Brand-1, #30F711);
+        font-family: Ubuntu;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.125rem;
+    }
+    .send-messages > p:nth-of-type(2),
+    .message-content-message > p:nth-of-type(2) {
+        align-self: stretch;
+        color: var(--White, var(--White, #FFF));
+        font-family: Ubuntu;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.125rem;
+        border-bottom: 1px solid var(--Brand-1);
+    }
+    .message-content-message {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        gap: 1.5rem;
+        flex: 1 0 0;
+    }
+    .send-message button {
+        display: flex;
+        padding: 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 2rem;
+        background: var(--Brand-1, #30F711);
+    }
+    .send-message button > span {
+        color: var(--BG-1, #131619);
+        font-family: Ubuntu;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-transform: capitalize;
+    }
+    .send-message button > svg {
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        align-self: stretch;
+        border-top: 1px solid var(--Grey);
+        padding-top: 2rem;
+    }
+    .footer-container {
+        display: flex;
+        padding: 0rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        align-self: stretch;
+    }
+    .footer-media {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .footer-medias {
+        display: flex;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 3rem;
+        background: var(--Brand-2, #44FF27);
+    }
+    .footer-medias svg {
+        display: flex;
+        width: 1rem;
+        height: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .footer-info p {
+        color: var(--White, var(--White, #FFF));
+        font-family: Ubuntu;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.125rem; /* 112.5% */
+    }
+    .footer-info-policy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .footer-design {
+        display: flex;
+    }
+    .footer-design p {
+        color: var(--White, var(--White, #FFF));
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.125rem; /* 112.5% */
+    }
+/*}*/
