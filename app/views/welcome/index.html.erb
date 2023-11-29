@@ -125,7 +125,12 @@
       </div>
     </section>
     <section class="about-me-image">
-      <%#= image_tag "coding-image.jpg" %>
+      <picture>
+        <source media="(max-width: 768px)" srcset="<%= image_path('code-img-very-small.jpg') %>" type="image/jpg">
+        <source media="(max-width: 1280px)" srcset="<%= image_path('code-img-very-small.jpg') %>" type="image/jpg">
+        <source srcset="<%= image_path('code-img-very-small.jpg') %>" type="image/jpg">
+        <%= image_tag "coding-image.jpg" %>
+      </picture>
     </section>
   </section>
 </section>

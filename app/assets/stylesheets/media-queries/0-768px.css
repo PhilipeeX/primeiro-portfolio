@@ -373,8 +373,6 @@
         flex-direction: column;
         align-items: flex-start;
         border-radius: 1rem;
-        background: url("coding-image.jpg"), lightgray 20%;
-        background-position: 30% 60%;
     }
     .skills {
         position: relative;
