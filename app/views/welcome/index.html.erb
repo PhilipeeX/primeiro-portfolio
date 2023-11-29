@@ -3,7 +3,12 @@
     <section class="profile-left">
       <section class="profile-all">
         <div class="photo-name">
-          <%= image_tag "imagem-philipe-small.jpeg", class: "profile-picture" %>
+          <picture>
+            <source media="(max-width: 400px)" srcset="<%= image_path('index/imagem-philipe-small.jpeg') %>" type="image/jpg">
+            <source media="(max-width: 768px)" srcset="<%= image_path('index/imagem-philipe-medium.jpeg') %>" type="image/jpg">
+            <source media="(min-width: 768px)" srcset="<%= image_path('raw-images/imagem-philipe.jpeg') %>" type="image/jpg">
+            <img src="index/imagem-philipe-medium.jpeg" alt="foto philipe" class="profile-picture">
+          </picture>
           <div class="name-stack">
             <h1 class="profile-name">Philipe</h1>
             <h2 class="profile-job-description">Full-stack developer</h2>
@@ -126,10 +131,10 @@
     </section>
     <section class="about-me-image">
       <picture>
-        <source media="(max-width: 768px)" srcset="<%= image_path('code-img-very-small.jpg') %>" type="image/jpg">
-        <source media="(max-width: 1280px)" srcset="<%= image_path('code-img-very-small.jpg') %>" type="image/jpg">
-        <source srcset="<%= image_path('code-img-very-small.jpg') %>" type="image/jpg">
-        <%= image_tag "coding-image.jpg" %>
+        <source media="(max-width: 400px)" srcset="<%= image_path('index/code-img-very-small.jpg') %>" type="image/jpg">
+        <source media="(max-width: 768px)" srcset="<%= image_path('index/code-img-medium.jpg') %>" type="image/jpg">
+        <source media="(min-width: 768px)" srcset="<%= image_path('raw-images/code-img-lg2.jpg') %>" type="image/jpg">
+        <img src="raw-images/code-img-lg2.jpg" alt="computadores com telas de codigo" class="about-me-image">
       </picture>
     </section>
   </section>
@@ -232,7 +237,12 @@
       </button>
     </div>
     <section class="works-projects">
-      <%= image_tag 'insomnia_api.png', class: "works-projects-image" %>
+      <picture>
+        <source media="(max-width: 440px)" srcset="<%= image_path('index/insomnia_api-small.png') %>" type="image/png">
+        <source media="(max-width: 1100px)" srcset="<%= image_path('index/insomnia_api-medium.png') %>" type="image/png">
+        <source media="(min-width: 1100px)" srcset="<%= image_path('index/insomnia_api-large.png') %>" type="image/png">
+        <img src="index/insomnia_api-large.png" alt="projeto" class="works-projects-image">
+      </picture>
     </section>
     <div class="works-wrapper-button">
       <button class="works-button">

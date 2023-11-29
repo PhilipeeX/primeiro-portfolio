@@ -1,8 +1,4 @@
 @media screen and (min-width: 768px) {
-    body {
-        background-color: var(--BG-1, #131619);
-        font-family: IBM Plex Mono, Ubuntu, monospace;
-    }
     header {
         display: flex;
         padding: 0 2rem;
@@ -124,8 +120,8 @@
         height: 2.5rem;
     }
     .works-projects {
-        width: 40rem;
-        height: 26rem;
+        min-width: 32rem;
+        height: 20rem;
     }
     .footer-info {
         flex-direction: row;
