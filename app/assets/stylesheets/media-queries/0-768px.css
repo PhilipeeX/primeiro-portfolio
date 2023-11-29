@@ -18,7 +18,8 @@
         align-self: stretch;
         border-bottom: 1px solid var(--Grey);
     }
-    .header-nav a {
+    .header-nav a,
+    .nav-bar svg {
         display: none;
     }
     .page-logo {
@@ -241,7 +242,7 @@
         font-size: 2rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 2.625rem; /* 131.25% */
+        line-height: 2.625rem;
         text-transform: capitalize;
     }
     .button-CTA {
@@ -279,7 +280,7 @@
         font-size: 3rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 3.875rem; /* 129.167% */
+        line-height: 3.875rem;
         text-transform: capitalize;
     }
     .highlight-text {
@@ -336,7 +337,7 @@
         font-size: 2rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 2.25rem; /* 112.5% */
+        line-height: 2.25rem;
     }
     .about-me-text {
         display: flex;
@@ -574,7 +575,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 4rem;
+        gap: 1rem;
         align-self: stretch;
     }
     .works-title-icon {
@@ -591,12 +592,6 @@
         font-weight: 400;
         line-height: 4.5rem;
         text-transform: capitalize;
-    }
-    .works-title-icon svg {
-        height: 0;
-        align-self: stretch;
-        stroke-width: 2px;
-        stroke: var(--Brand-1, #30F711);
     }
     .works-description {
         flex: 1 0 0;
@@ -681,12 +676,6 @@
         font-weight: 400;
         line-height: 4.5rem;
         text-transform: capitalize;
-    }
-    .contact-title-icon svg {
-        height: 0;
-        align-self: stretch;
-        stroke-width: 2px;
-        stroke: var(--Brand-1, #30F711);
     }
     .contact-description p {
         flex: 1 0 0;

@@ -43,7 +43,8 @@
     .header-nav .menu-icon {
         display: none;
     }
-    header .header-nav a {
+    header .header-nav a,
+    .nav-bar svg {
         display: block;
         color: white;
     }
