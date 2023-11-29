@@ -20,11 +20,9 @@
         align-self: stretch;
         border-bottom: 1px solid var(--Grey);
     }
-    .header-nav a,
+    .nav-links a,
     .nav-bar svg {
         display: none;
-    }
-    .page-logo {
     }
     .logo-code {
         color: var(--Brand-1)
