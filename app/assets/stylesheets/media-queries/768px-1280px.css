@@ -15,7 +15,6 @@
     }
     .logo-code {
         color: var(--Brand-1, #30F711);
-        font-family: IBM Plex Mono;
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 400;
@@ -24,7 +23,6 @@
     }
     .logo-name {
         color: var(--White, var(--White, #FFF));
-        font-family: IBM Plex Mono;
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 400;
@@ -34,7 +32,7 @@
     .nav-bar {
         display: flex;
         align-items: center;
-        gap: 1.5rem;
+        gap: 4rem;
     }
     .header-nav .menu-icon {
         display: none;
@@ -43,6 +41,17 @@
     .nav-bar svg {
         display: block;
         color: white;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.1rem;
+    }
+    .nav-buttons {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
     }
     .hero-section {
         padding: 4rem 4rem;
@@ -58,7 +67,7 @@
     }
     .profile-right-title-text > span {
         color: var(--White, var(--White, #FFF));
-        font-family: Ubuntu;
+        font-family: Ubuntu, monospace;
         font-size: 4rem;
         font-style: normal;
         font-weight: 400;
