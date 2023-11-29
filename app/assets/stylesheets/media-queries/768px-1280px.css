@@ -77,4 +77,59 @@
         font-weight: 400;
         line-height: 1.25rem;
     }
+    .about-me {
+        padding: 4rem;
+    }
+    .about-me-title {
+        align-self: flex-start;
+    }
+    .about-me-title span {
+        font-size: 4rem;
+        line-height: 4.5rem;
+        text-transform: capitalize;
+    }
+    .about-me-text {
+        padding: 1.5rem 2.5rem;
+        gap: 1rem;
+    }
+    .about-me-description {
+        width: 33.75rem;
+    }
+    .about-me-image {
+        width: 28.875rem;
+        height: 34.75rem;
+    }
+    .skills-cards {
+    flex-direction: row;
+    }
+    .skill-icons {
+        padding: 2.5rem;
+    }
+    .works {
+        padding: 4rem;
+    }
+    .works-content {
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+    .works-wrapper-button {
+        padding: 1rem;
+    }
+    .works-button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .works-button svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .works-projects {
+        width: 40rem;
+        height: 26rem;
+    }
+    .footer-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: normal;
+    }
 }
