@@ -90,7 +90,7 @@
         gap: 1rem;
     }
     .about-me-description {
-        width: 33.75rem;
+        max-width: 48.75rem;
     }
     .about-me-image {
         width: 28.875rem;
@@ -121,8 +121,10 @@
         height: 2.5rem;
     }
     .works-projects {
-        min-width: 32rem;
-        height: 20rem;
+    }
+    .contact-container {
+        width: 45rem;
+        align-self: center;
     }
     .footer-info {
         flex-direction: row;
