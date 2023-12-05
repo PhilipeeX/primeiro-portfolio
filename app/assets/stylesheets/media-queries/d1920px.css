@@ -1,0 +1,10 @@
+@media screen and (min-width: 1920px) {
+    .header-nav {
+        width: 1660px;
+        align-self: center;
+    }
+    .footer {
+        width: 1660px;
+        align-self: center;
+    }
+}
