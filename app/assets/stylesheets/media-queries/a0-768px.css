@@ -20,11 +20,9 @@
         align-self: stretch;
         border-bottom: 1px solid var(--Grey);
     }
-    .header-nav a,
+    .nav-links a,
     .nav-bar svg {
         display: none;
-    }
-    .page-logo {
     }
     .logo-code {
         color: var(--Brand-1)
@@ -350,7 +348,7 @@
         background: var(--BG-1, #131619);
     }
     .about-me-description {
-        width: 18.5rem;
+        max-width: 22.5rem;
         color: var(--White, var(--White, #FFF));
         font-size: 1rem;
         font-style: normal;
@@ -608,6 +606,7 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        align-self: stretch;
     }
     .works-wrapper-button {
         display: flex;
@@ -629,15 +628,12 @@
         flex-shrink: 0;
     }
     .works-projects {
-        width: 18.59156rem;
-        height: 12.375rem;
-        flex-shrink: 0;
+        align-self: stretch;
         overflow: hidden;
         border-radius: 0.5rem;
     }
     .works-projects-image {
-        background-size: cover;
-        background-position: center center;
+        object-fit: cover;
     }
     .contact {
         display: flex;
@@ -715,7 +711,7 @@
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 2rem; /* 133.333% */
+        line-height: 2rem;
         text-transform: capitalize;
     }
     .send-message-info {
