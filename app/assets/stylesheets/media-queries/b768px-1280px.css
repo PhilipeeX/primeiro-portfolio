@@ -31,7 +31,7 @@
     }
     header .header-nav a,
     .nav-bar svg {
-        display: block;
+        display: inline;
         color: white;
     }
     .nav-links {

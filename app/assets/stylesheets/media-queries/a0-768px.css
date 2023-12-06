@@ -24,6 +24,9 @@
     .nav-bar svg {
         display: none;
     }
+    .nav-button > p{
+        display: none;
+    }
     .logo-code {
         color: var(--Brand-1)
     }
