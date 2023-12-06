@@ -42,6 +42,10 @@
     .menu-icon {
         color: var(--White);
     }
+    .navigation-bar,
+    .hero-bg-title{
+        display: none;
+    }
     .hero-section {
         display: flex;
         padding: 4rem 0;
@@ -312,7 +316,6 @@
 
     .about-me-container {
         display: flex;
-        padding: 0 4rem;
         justify-content: center;
         align-items: center;
         align-content: center;
