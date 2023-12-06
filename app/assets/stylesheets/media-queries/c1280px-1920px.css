@@ -29,8 +29,8 @@
         align-items: flex-start;
         gap: 1.5rem;
         position: fixed;
-        left: 4rem;
-        top: 6rem;
+        left: 9%;
+        top: 20%;
         border-radius: 2.5rem;
         border: 1px solid var(--White, #FFF);
         background: var(--BG-2, #1A1E23);

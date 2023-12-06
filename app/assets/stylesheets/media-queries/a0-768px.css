@@ -24,6 +24,9 @@
     .nav-bar svg {
         display: none;
     }
+    .nav-button > p{
+        display: none;
+    }
     .logo-code {
         color: var(--Brand-1)
     }
@@ -38,6 +41,10 @@
     }
     .menu-icon {
         color: var(--White);
+    }
+    .navigation-bar,
+    .hero-bg-title{
+        display: none;
     }
     .hero-section {
         display: flex;
@@ -309,7 +316,6 @@
 
     .about-me-container {
         display: flex;
-        padding: 0 4rem;
         justify-content: center;
         align-items: center;
         align-content: center;
