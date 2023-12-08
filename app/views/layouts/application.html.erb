@@ -27,9 +27,9 @@
         </p>
         <div class="nav-bar">
           <section class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About-me</a>
-            <a href="#">Works</a>
+            <a href="#"><%= t 'views.layouts.application.nav_header.home' %></a>
+            <a href="#"><%= t 'views.layouts.application.nav_header.about-me' %></a>
+            <a href="#"><%= t 'views.layouts.application.nav_header.works' %></a>
           </section>
           <section class="nav-buttons">
             <%= link_to 'https://linkedin.com/in/dev-philipe', class: 'nav-button', target: '_blank' do %>
@@ -51,7 +51,15 @@
               <p>Github</p>
             <% end %>
           </section>
-          <i class="fa-solid fa-bars menu-icon"></i>
+          <section class="translate-menu-icon">
+            <%= link_to url_for(locale: 'pt-BR'), style: 'color: white' do %>
+              <%= image_tag 'raw-images/brazil-flag.png', style: 'width: 20px; height: 20px' %>
+            <% end %>
+            <%= link_to url_for(locale: 'en'), style: 'color: white' do %>
+              <%= image_tag 'raw-images/usa-flag.png', style: 'width: 20px; height: 20px' %>
+            <% end %>
+            <i class="fa-solid fa-bars menu-icon"></i>
+          </section>
         </div>
       </div>
     </header>

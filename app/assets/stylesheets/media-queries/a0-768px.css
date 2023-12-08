@@ -213,9 +213,9 @@
         font-size: 2rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 2.25rem; /* 112.5% */
+        line-height: 2.25rem;
     }
-    .profile-right-name {
+    .profile-right-title-text > span .profile-right-name {
         color: var(--Brand-1, var(--White, #30F711));
     }
     .profile-right-paragraph {
@@ -853,9 +853,6 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
-    }
-    .footer-design {
-        display: flex;
     }
     .footer-design p {
         color: var(--White, var(--White, #FFF));

@@ -24,13 +24,13 @@
     }
     .navigation-bar {
         display: flex;
-        padding: 0.5rem 0.35rem;
+        padding: 0.3rem 0.15rem;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
         position: fixed;
         left: 9%;
-        top: 20%;
+        top: 16%;
         border-radius: 2.5rem;
         border: 1px solid var(--White, #FFF);
         background: var(--BG-2, #1A1E23);
@@ -38,7 +38,7 @@
     }
     .navigation-bar-button {
         display: flex;
-        padding: 0.5rem;
+        padding: 0.3rem;
         align-items: flex-start;
         border-radius: 2.5rem;
         cursor: pointer;
@@ -48,8 +48,8 @@
     }
     .navigation-bar-button svg {
         display: flex;
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.2rem;
+        height: 1.2rem;
         justify-content: center;
         align-items: center;
         fill: var(--White);
@@ -117,8 +117,5 @@
     }
     .footer-media {
         order: 1;
-    }
-    .footer-design {
-        order: 2;
     }
 }

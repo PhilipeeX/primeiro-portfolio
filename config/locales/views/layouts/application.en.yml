@@ -1,0 +1,8 @@
+en:
+  views:
+    layouts:
+      application:
+        nav_header:
+          home: 'home'
+          about-me: 'about me'
+          works: 'works'

@@ -1,0 +1,41 @@
+pt-BR:
+  views:
+    welcome:
+      index:
+        title: 'Desenvolvedor'
+        job-description: 'Desenvolvedor Full-stack'
+        country: 'Brasil'
+        curriculum: 'Baixar CV'
+        profile-description:
+          hey: 'Eai..'
+          i-am: 'Me chamo '
+          job: 'Desenvolvedor Full-stack'
+          paragraph: 'Desenvolvedor especializado em Ruby on Rails, focado na criação de aplicações web. Quando possível, colaboro em projetos open source, buscando sempre agregar valor à comunidade de desenvolvimento.'
+        lets-talk: 'Vamos conversar'
+        highlights:
+          languages-1: 'Linguagens de'
+          languages-2: 'Programação'
+          tools-1: 'Ferramentas de'
+          tools-2: 'desenvolvimento'
+          experience-1: 'Anos de'
+          experience-2: 'experiência'
+        about-me: 'Sobre mim'
+        about-me-description:
+          hello: 'Oi!'
+          paragraph1: 'Em 2021, tive a oportunidade de conhecer mais sobre a vida de um colega de classe do meu antigo curso de inglês, que trabalhava como programador de jogos em C#'
+          paragraph2: 'Essa experiência reacendeu a chama que eu tinha pela programação e atualmente estou cursando Ciência da Computação no Instituto Brasileiro de Medicina de Reabilitação (IBMR).'
+          paragraph3: 'Eu me especializei em desenvolvimento web com a linguagem Ruby, utilizando Rails como framework.'
+          paragraph4: 'Além da programação, costumo dedicar meu tempo a definir ideias para novos projetos ou frequentar a academia e praticar atividades físicas, como natação.'
+          paragraph5: 'Participei de alguns projetos reais em equipe e estou motivado para continuar não apenas escrevendo código, mas também agregando valor com ideias e soluções em projetos freelancer.'
+        skills: 'Habilidades'
+        skills-desc: 'Estou focado em nunca parar de aprender e melhorar.'
+        projects: 'Projetos'
+        projects-desc: 'Eu tive o prazer de desenvolver ou de participar do desenvolvimento desses projetos.'
+        contact: 'Contato'
+        contact-desc: 'Estou disponível para atuar em novos projetos remoto e/ou freelancer.'
+        messages: 'Envio de mensagens'
+        send-message: 'Enviar mensagem'
+        rights: 'Todos os direitos reservados'
+        privacy: 'Políticas de privacidade'
+        terms: 'Termos e condições'
+
