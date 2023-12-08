@@ -27,7 +27,7 @@
 </nav>
 <section class="hero-section">
   <section class="hero-bg-title">
-    <h1 class="hero-section-title">Developer</h1>
+    <h1 class="hero-section-title"><%= t 'views.welcome.index.title' %></h1>
   </section>
   <section class="content">
     <section class="profile-left">
@@ -41,7 +41,7 @@
           </picture>
           <div class="name-stack">
             <h1 class="profile-name">Philipe</h1>
-            <h2 class="profile-job-description">Full-stack developer</h2>
+            <h2 class="profile-job-description"><%= t 'views.welcome.index.job-description' %></h2>
           </div>
         </div>
         <div class="profile-info">
@@ -57,7 +57,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99984 3.5C5.71117 3.5 4.6665 4.54467 4.6665 5.83333C4.6665 7.122 5.71117 8.16667 6.99984 8.16667C8.2885 8.16667 9.33317 7.122 9.33317 5.83333C9.33317 4.54467 8.2885 3.5 6.99984 3.5ZM5.83317 5.83333C5.83317 5.189 6.3555 4.66667 6.99984 4.66667C7.64417 4.66667 8.1665 5.189 8.1665 5.83333C8.1665 6.47767 7.64417 7 6.99984 7C6.3555 7 5.83317 6.47767 5.83317 5.83333Z" fill="#30F711"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.67595 13.9018C6.67611 13.9019 6.67626 13.902 6.99984 13.4167L6.67595 13.9018C6.87189 14.0324 7.12747 14.0327 7.32341 13.902L6.99984 13.4167C7.32341 13.902 7.32324 13.9021 7.32341 13.902L7.3254 13.9007L7.32928 13.8981L7.34265 13.8891C7.35401 13.8813 7.37021 13.8703 7.39093 13.8559C7.43236 13.8272 7.4919 13.7854 7.56696 13.7312C7.71702 13.6228 7.92946 13.4646 8.18352 13.2623C8.69073 12.8584 9.36853 12.275 10.0483 11.5574C11.384 10.1475 12.8332 8.10947 12.8332 5.83333C12.8332 4.28624 12.2186 2.80251 11.1246 1.70854C10.0307 0.614581 8.54693 0 6.99984 0C5.45274 0 3.96901 0.614581 2.87505 1.70854C1.78109 2.80251 1.1665 4.28624 1.1665 5.83333C1.1665 8.10947 2.61566 10.1475 3.95136 11.5574C4.63115 12.275 5.30895 12.8584 5.81615 13.2623C6.07021 13.4646 6.28266 13.6228 6.43272 13.7312C6.50777 13.7854 6.56731 13.8272 6.60875 13.8559C6.62946 13.8703 6.64566 13.8813 6.65702 13.8891L6.67039 13.8981L6.67428 13.9007L6.67595 13.9018ZM3.70001 2.5335C4.57517 1.65833 5.76216 1.16667 6.99984 1.16667C8.23751 1.16667 9.4245 1.65833 10.2997 2.5335C11.1748 3.40867 11.6665 4.59566 11.6665 5.83333C11.6665 7.64053 10.4907 9.39415 9.20136 10.7551C8.56865 11.4229 7.93395 11.9697 7.45678 12.3497C7.27919 12.4911 7.12407 12.6089 6.99984 12.7007C6.8756 12.6089 6.72049 12.4911 6.5429 12.3497C6.06573 11.9697 5.43103 11.4229 4.79831 10.7551C3.50902 9.39415 2.33317 7.64053 2.33317 5.83333C2.33317 4.59566 2.82484 3.40867 3.70001 2.5335Z" fill="#30F711"/>
               </svg>
-              <span class="profile-inner-texts">Rio de Janeiro - Brazil</span>
+              <span class="profile-inner-texts">Rio de Janeiro - <%= t 'views.welcome.index.country' %></span>
             </div>
             <div class="texts">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" class="profile-text-icon">
@@ -80,7 +80,7 @@
       </section>
       <a href="../../../public/Philipe_curriculo_dez_2023.pdf" download="Philipe_curriculo.pdf" type="application/pdf">
         <button class="cv-button">
-          Download CV
+          <%= t 'views.welcome.index.curriculum' %>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M13 3C13 2.44772 12.5523 2 12 2C11.4477 2 11 2.44772 11 3V12.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L17.7071 10.7071C18.0976 10.3166 18.0976 9.68342 17.7071 9.29289C17.3166 8.90237 16.6834 8.90237 16.2929 9.29289L13 12.5858V3Z" fill="#131619"/>
             <path d="M3 14C3.55228 14 4 14.4477 4 15V19C4 19.2652 4.10536 19.5196 4.29289 19.7071C4.48043 19.8946 4.73478 20 5 20H19C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19V15C20 14.4477 20.4477 14 21 14C21.5523 14 22 14.4477 22 15V19C22 19.7957 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7957 22 19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7957 2 19V15C2 14.4477 2.44772 14 3 14Z" fill="#131619"/>
@@ -96,9 +96,9 @@
             <%= "<h1>" %>
           </span>
           <div class="profile-right-title-text">
-            <span>Hey</span>
-            <span>I’m <span class="profile-right-name">Philipe</span>,</span>
-            <span>Full-stack developer</span>
+            <span><%= t 'views.welcome.index.profile-description.hey' %></span>
+            <span><%= t 'views.welcome.index.profile-description.i-am' %><span class="profile-right-name">Philipe</span>,</span>
+            <span><%= t 'views.welcome.index.profile-description.job' %></span>
           </div>
           <span class="profile-title-code">
              <%= "</h1>" %>
@@ -109,13 +109,13 @@
             <%= "<p>" %>
           </span>
           <div class="paragraph-text">
-            <span class="paragraph-inner-text">I help business grow by crafting amazing web experiences. If you’re looking for a developer that likes to get stuff done,</span>
+            <span class="paragraph-inner-text"><%= t 'views.welcome.index.profile-description.paragraph' %></span>
           </div>
           <span class="profile-title-code">
             <%= "</p>" %>
           </span>
           <div class="CTA">
-            <span class="profile-right-talk">let’s talk</span>
+            <span class="profile-right-talk"><%= t 'views.welcome.index.lets-talk' %></span>
             <button class="button-CTA">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" class="button-CTA-icon">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.583575 3.48988C0.58348 3.49564 0.583471 3.50139 0.583546 3.50715V10.5C0.583546 11.4638 1.36971 12.25 2.33355 12.25H11.6669C12.6307 12.25 13.4169 11.4638 13.4169 10.5V3.50721C13.417 3.50141 13.4169 3.4956 13.4169 3.4898C13.4113 2.53063 12.6273 1.75 11.6669 1.75H2.33355C1.37309 1.75 0.589053 2.53067 0.583575 3.48988ZM1.81238 3.2398C1.90885 3.04904 2.10724 2.91667 2.33355 2.91667H11.6669C11.8932 2.91667 12.0916 3.04904 12.188 3.2398L7.00021 6.87128L1.81238 3.2398ZM12.2502 4.62038V10.5C12.2502 10.8195 11.9864 11.0833 11.6669 11.0833H2.33355C2.01405 11.0833 1.75021 10.8195 1.75021 10.5V4.62038L6.66569 8.06122C6.86655 8.20182 7.13388 8.20182 7.33473 8.06122L12.2502 4.62038Z" fill="#30F711"/>
@@ -126,13 +126,13 @@
       </section>
       <section class="highlights">
         <div class="language">
-          <span class="highlight-numbers">3</span><div class="highlight-text"><span class="highlight-texts">Programming</span><span class="highlight-texts">Languages</span> </div>
+          <span class="highlight-numbers">3</span><div class="highlight-text"><span class="highlight-texts"><%= t 'views.welcome.index.highlights.languages-1' %></span><span class="highlight-texts"><%= t 'views.welcome.index.highlights.languages-2' %></span> </div>
         </div>
         <div class="tools">
-          <span class="highlight-numbers">6</span><div class="highlight-text"><span class="highlight-texts">Development</span><span class="highlight-texts">Tools</span> </div>
+          <span class="highlight-numbers">6</span><div class="highlight-text"><span class="highlight-texts"><%= t 'views.welcome.index.highlights.tools-1' %></span><span class="highlight-texts"><%= t 'views.welcome.index.highlights.tools-2' %></span> </div>
         </div>
         <div class="experience">
-          <span class="highlight-numbers">2</span><div class="highlight-text"><span class="highlight-texts">Years of</span><span class="highlight-texts">Experience</span> </div>
+          <span class="highlight-numbers">2</span><div class="highlight-text"><span class="highlight-texts"><%= t 'views.welcome.index.highlights.experience-1' %></span><span class="highlight-texts"><%= t 'views.welcome.index.highlights.experience-2' %></span> </div>
         </div>
       </section>
     </section>
@@ -143,18 +143,19 @@
   <section class="about-me-container">
     <section class="about-me-content">
       <div class="about-me-title">
-        <span>About me</span>
+        <span><%= t 'views.welcome.index.about-me' %></span>
       </div>
       <div class="about-me-text">
         <span class="profile-title-code">
           <%= "<p>" %>
         </span>
         <div class="about-me-description">
-          <span class="about-me-description-title">Hello!</span>
-          <p>My name is Philipe and I specialize in web developement that utilizes Ruby, Rails framework, JS, and REACT.</p>
-          <p>I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving.</p>
-          <p>When I'm not coding, I am writing blogs, reading, or picking up some new hands-on art project.</p>
-          <p>I like to have my perspective and belief systems challenged so that I see the world through new eyes.</p>
+          <span class="about-me-description-title"><%= t 'views.welcome.index.about-me-description.hello' %></span>
+          <p><%= t 'views.welcome.index.about-me-description.paragraph1' %></p>
+          <p><%= t 'views.welcome.index.about-me-description.paragraph2' %></p>
+          <p><%= t 'views.welcome.index.about-me-description.paragraph3' %></p>
+          <p><%= t 'views.welcome.index.about-me-description.paragraph4' %></p>
+          <p><%= t 'views.welcome.index.about-me-description.paragraph5' %></p>
         </div>
         <span class="profile-title-code">
           <%= "</p>" %>
@@ -176,13 +177,13 @@
   <div class="skills-container">
     <div class="skills-title-description">
       <div class="skills-title">
-        <h3>Skills</h3>
+        <h3><%= t 'views.welcome.index.skills' %></h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="160" height="12" viewBox="0 0 160 12" fill="none">
           <path d="M0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6ZM148.667 6C148.667 8.94552 151.054 11.3333 154 11.3333C156.946 11.3333 159.333 8.94552 159.333 6C159.333 3.05448 156.946 0.666667 154 0.666667C151.054 0.666667 148.667 3.05448 148.667 6ZM6 7H154V5H6V7Z" fill="#30F711"/>
         </svg>
       </div>
       <p class="skills-description">
-        I am striving to never stop learning and improving
+        <%= t 'views.welcome.index.skills-desc' %>
       </p>
     </div>
     <div class="skills-cards-icons">
@@ -192,7 +193,7 @@
             <i class="fa-solid fa-desktop"></i>
           </section>
           <div class="skill-card-text">
-            <p class="skill-card-title">web development</p>
+            <p class="skill-card-title">Front-end</p>
             <p class="skill-card-description">HTML·CSS·JS·REACT</p>
           </div>
         </div>
@@ -201,8 +202,8 @@
             <i class="fa-solid fa-mobile-screen"></i>
           </section>
           <div class="skill-card-text">
-            <p class="skill-card-title">App development</p>
-            <p class="skill-card-description">iOS·Android</p>
+            <p class="skill-card-title">Fullstack</p>
+            <p class="skill-card-description">Ruby·Rails·SQL·RSpec</p>
           </div>
         </div>
       </section>
@@ -251,13 +252,13 @@
 <section class="works">
   <section class="works-title-description">
     <div class="works-title-icon">
-      <h4>works</h4>
+      <h4><%= t 'views.welcome.index.projects' %></h4>
       <svg xmlns="http://www.w3.org/2000/svg" width="160" height="12" viewBox="0 0 160 12" fill="none">
         <path d="M0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6ZM148.667 6C148.667 8.94552 151.054 11.3333 154 11.3333C156.946 11.3333 159.333 8.94552 159.333 6C159.333 3.05448 156.946 0.666667 154 0.666667C151.054 0.666667 148.667 3.05448 148.667 6ZM6 7H154V5H6V7Z" fill="#30F711"></path>
       </svg>
     </div>
     <div class="works-description">
-      <p>I had the pleasure of working with these awesome projects</p>
+      <p><%= t 'views.welcome.index.projects-desc' %></p>
     </div>
   </section>
   <section class="works-content">
@@ -290,39 +291,39 @@
   <section class="contact-container">
     <section class="contact-title-description">
       <div class="contact-title-icon">
-        <h5>Contact</h5>
+        <h5><%= t 'views.welcome.index.contact' %></h5>
         <svg xmlns="http://www.w3.org/2000/svg" width="240" height="12" viewBox="0 0 240 12" fill="none">
           <path d="M0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6ZM228.667 6C228.667 8.94552 231.054 11.3333 234 11.3333C236.946 11.3333 239.333 8.94552 239.333 6C239.333 3.05448 236.946 0.666667 234 0.666667C231.054 0.666667 228.667 3.05448 228.667 6ZM6 7H234V5H6V7Z" fill="#30F711"/>
         </svg>
       </div>
       <div class="contact-description">
-        <p>I’m currently available for remote work</p>
+        <p><%= t 'views.welcome.index.contact-desc' %></p>
       </div>
     </section>
     <section class="send-message">
       <section class="send-message-content">
         <div class="send-message-title">
-          <h6>Send me a message</h6>
+          <h6><%= t 'views.welcome.index.messages' %></h6>
         </div>
         <div class="send-message-info">
           <div class="message-name-email">
             <div class="send-messages">
-              <p>Your name *</p>
-              <p>Enter your name</p>
+              <p>Seu nome *</p>
+              <p>Insira seu nome</p>
             </div>
             <div class="send-messages">
-              <p>Your email *</p>
-              <p>Enter your email</p>
+              <p>Seu e-mail *</p>
+              <p>Insira seu e-mail</p>
             </div>
           </div>
           <div class="message-content-message">
-            <p>Your message *</p>
-            <p>Enter your needs</p>
+            <p>Sua mensagem *</p>
+            <p>Por favor deixe seu feedback, sugestões ou qualquer tipo de informação pertinente</p>
           </div>
         </div>
       </section>
       <button>
-        <span>Send Message</span>
+        <span><%= t 'views.welcome.index.send-message' %></span>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7071 1.29292C22.9306 1.5164 23.0262 1.81935 22.9939 2.11081C22.9848 2.19252 22.9657 2.27332 22.9366 2.35121L15.9439 22.3304C15.8084 22.7174 15.4504 22.9825 15.0408 22.9992C14.6311 23.0159 14.2527 22.7808 14.0862 22.4062L10.2424 13.7576L1.59387 9.91384C1.21919 9.74731 0.984122 9.36894 1.00084 8.95926C1.01755 8.54959 1.28265 8.19162 1.66965 8.05617L21.6488 1.06348C21.7272 1.03414 21.8085 1.01497 21.8907 1.00598C21.9511 0.999338 22.0117 0.998262 22.0717 1.00259C22.3032 1.01913 22.5301 1.11591 22.7071 1.29292ZM18.1943 4.3915L4.71108 9.11063L10.7785 11.8073L18.1943 4.3915ZM12.1928 13.2215L19.6085 5.80571L14.8894 19.289L12.1928 13.2215Z" fill="#131619"/>
         </svg>
@@ -349,15 +350,11 @@
         <% end %>
       </div>
       <div class="footer-info">
-        <p>© 2023 Philipe. All rights reserved.</p>
+        <p>&copy; 2023 Philipe. <%= t 'views.welcome.index.rights' %>.</p>
         <div class="footer-info-policy">
-          <p>Privacy Policy</p>
-          <p>Terms & Conditions</p>
+          <p><%= t 'views.welcome.index.privacy' %></p>
+          <p><%= t 'views.welcome.index.terms' %></p>
         </div>
-      </div>
-      <div class="footer-design">
-        <p>Design By: </p>
-        <p>JohannLeon</p>
       </div>
     </div>
   </section>

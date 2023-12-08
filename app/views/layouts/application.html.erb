@@ -18,10 +18,6 @@
   </head>
 
   <body>
-  <ul>
-    <li><%= link_to "Português", url_for(locale: 'pt-BR'), style: 'color: white' %></li>
-    <li><%= link_to "English", url_for(locale: 'en'), style: 'color: white' %></li>
-  </ul>
     <header>
       <div class="header-nav">
         <p class="page-logo">
@@ -31,9 +27,9 @@
         </p>
         <div class="nav-bar">
           <section class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About-me</a>
-            <a href="#">Works</a>
+            <a href="#"><%= t 'views.layouts.application.nav_header.home' %></a>
+            <a href="#"><%= t 'views.layouts.application.nav_header.about-me' %></a>
+            <a href="#"><%= t 'views.layouts.application.nav_header.works' %></a>
           </section>
           <section class="nav-buttons">
             <%= link_to 'https://linkedin.com/in/dev-philipe', class: 'nav-button', target: '_blank' do %>
