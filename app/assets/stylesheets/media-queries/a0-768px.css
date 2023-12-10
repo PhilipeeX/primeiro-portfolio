@@ -39,6 +39,20 @@
         line-height: 1.25rem;
         text-transform: capitalize;
     }
+    .translate-menu-icon {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .translate-menu-icon > a {
+        display: flex;
+        align-items: center;
+    }
+    .translate-button {
+        width: 20px;
+        height: 20px;
+        align-self: center;
+    }
     .menu-icon {
         color: var(--White);
     }
