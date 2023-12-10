@@ -52,12 +52,7 @@
             <% end %>
           </section>
           <section class="translate-menu-icon">
-            <%= link_to url_for(locale: 'pt-BR'), style: 'color: white' do %>
-              <%= image_tag 'raw-images/brazil-flag.png', style: 'width: 20px; height: 20px' %>
-            <% end %>
-            <%= link_to url_for(locale: 'en'), style: 'color: white' do %>
-              <%= image_tag 'raw-images/usa-flag.png', style: 'width: 20px; height: 20px' %>
-            <% end %>
+            <%= translation_link %>
             <i class="fa-solid fa-bars menu-icon"></i>
           </section>
         </div>
