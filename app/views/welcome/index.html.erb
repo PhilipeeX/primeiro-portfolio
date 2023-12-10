@@ -305,6 +305,15 @@
         <div class="send-message-title">
           <h6><%= t 'views.welcome.index.messages' %></h6>
         </div>
+
+        <%= form_with(model: @message, url: create_message_path, local: true) do |form| %>
+          <%= form.text_field :person_name %>
+          <%= form.text_field :person_mail %>
+          <%= form.text_area :description %>
+          <%= form.submit 'Enviar' %>
+        <% end %>
+
+        <!--      FORMULÁRIO -->
         <div class="send-message-info">
           <div class="message-name-email">
             <div class="send-messages">
