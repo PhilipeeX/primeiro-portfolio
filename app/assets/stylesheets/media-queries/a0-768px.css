@@ -704,9 +704,8 @@
     .send-message {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 4rem;
-        align-self: stretch;
+        align-items: flex-start;
+        gap: 1.5rem;
     }
     .send-message-content {
         display: flex;
@@ -739,25 +738,25 @@
         flex-direction: column;
         align-items: center;
         gap: 4rem;
-        align-self: stretch;
+        border: 1px solid red;
+        width: 100%
     }
     .message-name-email {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        gap: 1.5rem;
-        align-self: stretch;
+        gap: 24px;
+        flex-shrink: 1;
     }
     .send-messages {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
-        flex: 1 0 0;
+        border-bottom: 1px solid var(--Brand-1);
+        flex-shrink: 1;
     }
-    .send-messages > p:first-of-type,
-    .message-content-message > p:first-of-type {
-        flex: 1 0 0;
+    .send-messages-label {
         color: var(--Brand-1, #30F711);
         font-family: Ubuntu;
         font-size: 1rem;
@@ -765,24 +764,20 @@
         font-weight: 300;
         line-height: 1.125rem;
     }
-    .send-messages > p:nth-of-type(2),
-    .message-content-message > p:nth-of-type(2) {
-        align-self: stretch;
+    .send-messages-input {
         color: var(--White, var(--White, #FFF));
         font-family: Ubuntu;
         font-size: 1rem;
         font-style: normal;
         font-weight: 300;
         line-height: 1.125rem;
-        border-bottom: 1px solid var(--Brand-1);
     }
     .message-content-message {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        align-self: stretch;
         gap: 1.5rem;
-        flex: 1 0 0;
+        border-bottom: 1px solid var(--Brand-1);
     }
     .send-message button {
         display: flex;
