@@ -56,6 +56,17 @@
     .menu-icon {
         color: var(--White);
     }
+    .flash-message {
+        display: flex;
+        justify-content: center;
+    }
+    .flash-success {
+        background-color: var(--Brand-1);
+    }
+    .flash-error {
+        text-align: center;
+        background-color: red;
+    }
     .navigation-bar,
     .hero-bg-title{
         display: none;

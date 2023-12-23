@@ -1,3 +1,13 @@
+<% if flash[:success] %>
+  <div class="flash-message flash-success">
+    <%= flash[:success] %>
+  </div>
+<% elsif flash[:error] %>
+  <div class="flash-message flash-error">
+    <%= flash[:error] %>
+  </div>
+<% end %>
+
 <nav class="navigation-bar">
   <div class="navigation-bar-button">
     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
@@ -306,7 +316,6 @@
           <h6><%= t 'views.welcome.index.messages' %></h6>
         </div>
 
-        <!--      FORMULÁRIO -->
         <%= form_with(model: @message, url: create_message_path, local: true, class: 'send-message-info') do |form| %>
           <div class="message-name-email">
             <div class="send-messages">
@@ -335,6 +344,7 @@
       </section>
     </section>
   </section>
+
   <section class="footer">
     <div class="footer-container">
       <div class="footer-media">
