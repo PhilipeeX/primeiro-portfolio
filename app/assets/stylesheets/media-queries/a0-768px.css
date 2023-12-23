@@ -56,6 +56,17 @@
     .menu-icon {
         color: var(--White);
     }
+    .flash-message {
+        display: flex;
+        justify-content: center;
+    }
+    .flash-success {
+        background-color: var(--Brand-1);
+    }
+    .flash-error {
+        text-align: center;
+        background-color: red;
+    }
     .navigation-bar,
     .hero-bg-title{
         display: none;
@@ -705,7 +716,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 4rem;
+        gap: 1.5rem;
         align-self: stretch;
     }
     .send-message-content {
@@ -735,17 +746,15 @@
     }
     .send-message-info {
         display: flex;
-        padding: 0 1.5rem;
         flex-direction: column;
         align-items: center;
         gap: 4rem;
-        align-self: stretch;
+        width: 100%
     }
     .message-name-email {
         display: flex;
-        justify-content: center;
         align-items: flex-start;
-        gap: 1.5rem;
+        gap: 24px;
         align-self: stretch;
     }
     .send-messages {
@@ -753,11 +762,11 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
-        flex: 1 0 0;
+        border-bottom: 1px solid var(--Brand-1);
+        flex-shrink: 1;
+        width: 100%;
     }
-    .send-messages > p:first-of-type,
-    .message-content-message > p:first-of-type {
-        flex: 1 0 0;
+    .send-messages-label {
         color: var(--Brand-1, #30F711);
         font-family: Ubuntu;
         font-size: 1rem;
@@ -765,26 +774,33 @@
         font-weight: 300;
         line-height: 1.125rem;
     }
-    .send-messages > p:nth-of-type(2),
-    .message-content-message > p:nth-of-type(2) {
-        align-self: stretch;
+    .send-messages-input {
         color: var(--White, var(--White, #FFF));
         font-family: Ubuntu;
         font-size: 1rem;
         font-style: normal;
         font-weight: 300;
         line-height: 1.125rem;
-        border-bottom: 1px solid var(--Brand-1);
+        width: 100%;
     }
     .message-content-message {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        align-self: stretch;
         gap: 1.5rem;
-        flex: 1 0 0;
+        border-bottom: 1px solid var(--Brand-1);
+        width: 100%;
     }
-    .send-message button {
+    .message-content-message > textarea {
+        color: var(--White, var(--White, #FFF));
+        font-family: Ubuntu;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.125rem;
+        width: 100%;
+    }
+    .form-submit-btn {
         display: flex;
         padding: 1rem 2rem;
         justify-content: center;
@@ -793,7 +809,7 @@
         border-radius: 2rem;
         background: var(--Brand-1, #30F711);
     }
-    .send-message button > span {
+    .form-submit-btn > span {
         color: var(--BG-1, #131619);
         font-family: Ubuntu;
         font-size: 1.25rem;
@@ -802,7 +818,7 @@
         line-height: 1.5rem;
         text-transform: capitalize;
     }
-    .send-message button > svg {
+    .form-submit-btn > svg {
         display: flex;
         width: 1.5rem;
         height: 1.5rem;
