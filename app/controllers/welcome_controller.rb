@@ -6,10 +6,10 @@ class WelcomeController < ApplicationController
   def create_message
     @message = Message.new(message_params)
     if @message.save
-      flash[:success] = 'Mensagem enviada com sucesso!'
+      flash[:success] = t('.success')
       redirect_to welcome_path
     else
-      flash[:error] = 'Houve um erro ao tentar enviar a mensagem.'
+      flash[:error] = t('.failure')
       redirect_to welcome_path
     end
   end
