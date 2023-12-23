@@ -24,7 +24,7 @@
     .nav-bar {
         display: flex;
         align-items: center;
-        gap: 4rem;
+        gap: 1.5rem;
     }
     .header-nav .menu-icon {
         display: none;
@@ -43,7 +43,7 @@
     .nav-buttons {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 0.5rem;
     }
     .hero-section {
         padding: 4rem 4rem;
