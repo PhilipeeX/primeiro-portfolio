@@ -126,6 +126,9 @@
         width: 45rem;
         align-self: center;
     }
+    .send-message-info {
+        padding: 0 64px;
+    }
     .footer-info {
         flex-direction: row;
         justify-content: space-between;
