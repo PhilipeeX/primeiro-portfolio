@@ -5,6 +5,12 @@
     .header-nav {
         padding: 3rem 0;
     }
+    .nav-bar {
+        gap: 4rem;
+    }
+    .nav-buttons {
+        gap: 2rem;
+    }
     .logo-code {
         font-size: 2rem;
         font-weight: 500;
