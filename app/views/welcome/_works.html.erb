@@ -1,0 +1,103 @@
+<section class="works">
+  <section class="works-title-description">
+    <div class="works-title-icon">
+      <h4><%= t 'views.welcome.index.projects' %></h4>
+      <svg xmlns="http://www.w3.org/2000/svg" width="160" height="12" viewBox="0 0 160 12" fill="none">
+        <path d="M0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6ZM148.667 6C148.667 8.94552 151.054 11.3333 154 11.3333C156.946 11.3333 159.333 8.94552 159.333 6C159.333 3.05448 156.946 0.666667 154 0.666667C151.054 0.666667 148.667 3.05448 148.667 6ZM6 7H154V5H6V7Z" fill="#30F711"></path>
+      </svg>
+    </div>
+    <div class="works-description">
+      <p><%= t 'views.welcome.index.projects-desc' %></p>
+    </div>
+  </section>
+  <section class="works-content">
+    <div class="works-wrapper-button works-button-left">
+      <button class="works-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+          <path d="M8.94593 9.99984L13.3567 5.58909C13.6821 5.26366 13.6821 4.73602 13.3567 4.41058C13.0312 4.08514 12.5036 4.08514 12.1782 4.41058L7.17816 9.41058C6.85272 9.73602 6.85272 10.2637 7.17816 10.5891L12.1782 15.5891C12.5036 15.9145 13.0312 15.9145 13.3567 15.5891C13.6821 15.2637 13.6821 14.736 13.3567 14.4106L8.94593 9.99984Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+    <section class="works-projects" id="works-carousel">
+      <div class="carousel-item carousel-on">
+        <picture>
+          <source media="(max-width: 440px)" srcset="<%= image_path('index/insomnia_api-small.png') %>" type="image/png">
+          <source media="(max-width: 1100px)" srcset="<%= image_path('index/insomnia_api-medium.png') %>" type="image/png">
+          <source media="(min-width: 1100px)" srcset="<%= image_path('index/insomnia_api-large.png') %>" type="image/png">
+          <img src="index/insomnia_api-large.png" alt="projeto" class="works-projects-image">
+        </picture>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width: 440px)" srcset="<%= image_path('raw-images/applify-img.png') %>" type="image/png">
+          <source media="(max-width: 1100px)" srcset="<%= image_path('raw-images/applify-img.png') %>" type="image/png">
+          <source media="(min-width: 1100px)" srcset="<%= image_path('raw-images/applify-img.png') %>" type="image/png">
+          <img src="raw-images/applify-img.png" alt="Applify project" class="works-projects-image">
+        </picture>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width: 440px)" srcset="<%= image_path('raw-images/ticket-event-img.png') %>" type="image/png">
+          <source media="(max-width: 1100px)" srcset="<%= image_path('raw-images/ticket-event-img.png') %>" type="image/png">
+          <source media="(min-width: 1100px)" srcset="<%= image_path('raw-images/ticket-event-img.png') %>" type="image/png">
+          <img src="raw-images/ticket-event-img.png" alt="Ticket event project" class="works-projects-image">
+        </picture>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source media="(max-width: 440px)" srcset="<%= image_path('raw-images/editora-de-livros.png') %>" type="image/png">
+          <source media="(max-width: 1100px)" srcset="<%= image_path('raw-images/editora-de-livros.png') %>" type="image/png">
+          <source media="(min-width: 1100px)" srcset="<%= image_path('raw-images/editora-de-livros.png') %>" type="image/png">
+          <img src="raw-images/editora-de-livros.png" alt="Bibliotech projeto" class="works-projects-image">
+        </picture>
+      </div>
+    </section>
+    <div class="works-wrapper-button works-button-right">
+      <button class="works-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+          <path d="M8.822 4.41058C8.49657 4.08514 7.96893 4.08514 7.64349 4.41058C7.31805 4.73602 7.31805 5.26366 7.64349 5.58909L12.0542 9.99984L7.64349 14.4106C7.31805 14.736 7.31805 15.2637 7.64349 15.5891C7.96893 15.9145 8.49657 15.9145 8.822 15.5891L13.822 10.5891C14.1474 10.2637 14.1474 9.73602 13.822 9.41058L8.822 4.41058Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+</section>
+<script>
+    let $worksButtonLeft = document.querySelector('.works-button-left')
+    let $worksButtonRight = document.querySelector('.works-button-right')
+    let $carouselItems = document.querySelectorAll('.carousel-item')
+
+    let currentItem = 0
+
+    function hideItem() {
+        $carouselItems.forEach(item => item.classList.remove('carousel-on'))
+    }
+
+    function showItem() {
+        $carouselItems[currentItem].classList.add('carousel-on')
+    }
+
+    function nextItem() {
+        hideItem()
+        if(currentItem === $carouselItems.length - 1){
+          currentItem = 0
+        } else {
+            currentItem++
+        }
+        showItem()
+    }
+
+    function prevItem() {
+        hideItem()
+        if(currentItem === 0){
+            currentItem = $carouselItems.length - 1
+        } else {
+            currentItem--
+        }
+        showItem()
+    }
+
+    $worksButtonRight.addEventListener('click', nextItem)
+    $worksButtonLeft.addEventListener('click', prevItem)
+
+</script>
