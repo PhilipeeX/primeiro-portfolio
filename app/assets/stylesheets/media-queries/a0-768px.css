@@ -491,6 +491,9 @@
         border-radius: 0.5rem;
         background: var(--Brand-2, #44FF27);
     }
+    .skill-card:hover {
+        cursor: pointer;
+    }
     .skill-card-icons {
         display: flex;
         width: 2rem;
@@ -551,22 +554,25 @@
         border-radius: 5rem;
     }
 
-    .skill-icon-html {
-        background: #E54F26;
+    .skill-icon-ruby {
+        background: #e10f0f;
     }
 
-    .skill-icon-css {
-        background: #0C73B8;
+    .skill-icon-rails {
+        background: #CC0000;
     }
 
     .skill-icon-js {
         background: #E7A020;
     }
 
-    .skill-icon-react {
-        background: #28A9E0;
+    .skill-icon-postgres {
+        background: #0064a5;
     }
 
+    .rails-icon-svg path {
+        fill: #FFFFFF;
+    }
     .skill-text {
         font-family: IBM Plex Mono;
         font-size: 2rem;
@@ -575,20 +581,20 @@
         line-height: 2.625rem;
         text-transform: capitalize;
     }
-    .skill-text-html {
-        color: #E54F26;
+    .skill-text-ruby {
+        color: #e10f0f;
     }
 
-    .skill-text-css {
-        color: #0C73B8;
+    .skill-text-rails {
+        color: #CC0000;
     }
 
     .skill-text-js {
         color: #E7A020;
     }
 
-    .skill-text-react {
-        color: #28A9E0;
+    .skill-text-postgres {
+        color: #0064a5;
     }
     .works {
         display: flex;
