@@ -644,6 +644,7 @@
         gap: 1rem;
         align-self: stretch;
     }
+
     .works-wrapper-button {
         display: flex;
         padding: 0.5rem;
@@ -667,9 +668,27 @@
         align-self: stretch;
         overflow: hidden;
         border-radius: 0.5rem;
+        width: 70rem;
+        height: 20rem;
+    }
+    #works-carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .carousel-item {
+        display: none;
+    }
+    .carousel-on {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .works-projects-image {
-        object-fit: cover;
+        border-radius: 0.5rem;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
     }
     .contact {
         display: flex;
