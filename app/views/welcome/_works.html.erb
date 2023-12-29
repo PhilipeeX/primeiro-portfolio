@@ -62,42 +62,43 @@
   </section>
 
 </section>
-<script>
-    let $worksButtonLeft = document.querySelector('.works-button-left')
-    let $worksButtonRight = document.querySelector('.works-button-right')
-    let $carouselItems = document.querySelectorAll('.carousel-item')
+<script defer>
+    (function() {
+        let $worksButtonLeft = document.querySelector('.works-button-left');
+        let $worksButtonRight = document.querySelector('.works-button-right');
+        let $carouselItems = document.querySelectorAll('.carousel-item');
 
-    let currentItem = 0
+        let currentItem = 0;
 
-    function hideItem() {
-        $carouselItems.forEach(item => item.classList.remove('carousel-on'))
-    }
-
-    function showItem() {
-        $carouselItems[currentItem].classList.add('carousel-on')
-    }
-
-    function nextItem() {
-        hideItem()
-        if(currentItem === $carouselItems.length - 1){
-          currentItem = 0
-        } else {
-            currentItem++
+        function hideItem() {
+            $carouselItems.forEach(item => item.classList.remove('carousel-on'));
         }
-        showItem()
-    }
 
-    function prevItem() {
-        hideItem()
-        if(currentItem === 0){
-            currentItem = $carouselItems.length - 1
-        } else {
-            currentItem--
+        function showItem() {
+            $carouselItems[currentItem].classList.add('carousel-on');
         }
-        showItem()
-    }
 
-    $worksButtonRight.addEventListener('click', nextItem)
-    $worksButtonLeft.addEventListener('click', prevItem)
+        function nextItem() {
+            hideItem();
+            if (currentItem === $carouselItems.length - 1) {
+                currentItem = 0;
+            } else {
+                currentItem++;
+            }
+            showItem();
+        }
 
+        function prevItem() {
+            hideItem();
+            if (currentItem === 0) {
+                currentItem = $carouselItems.length - 1;
+            } else {
+                currentItem--;
+            }
+            showItem();
+        }
+
+        $worksButtonRight.addEventListener('click', nextItem);
+        $worksButtonLeft.addEventListener('click', prevItem);
+    })();
 </script>
