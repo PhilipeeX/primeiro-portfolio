@@ -683,6 +683,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     .works-projects-image {
         border-radius: 0.5rem;
