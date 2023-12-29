@@ -18,4 +18,16 @@ RSpec.describe 'welcome', type: :feature, js: true do
 
     expect(new_content).not_to eq(current_content)
   end
+
+  scenario 'when user changes application language and interact with carousel' do
+    visit welcome_index_path(locale: I18n.default_locale)
+    current_content = find('.carousel-on')
+
+    find('.translate-menu-icon').click
+    sleep 1
+    find(".works-button-right").click
+    new_content = find(".carousel-on")
+
+    expect(new_content).not_to eq(current_content)
+  end
 end
