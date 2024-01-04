@@ -10,95 +10,66 @@
       <p><%= t 'views.welcome.index.projects-desc' %></p>
     </div>
   </section>
-  <section class="works-content">
-    <div class="works-wrapper-button works-button-left">
-      <button class="works-button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-          <path d="M8.94593 9.99984L13.3567 5.58909C13.6821 5.26366 13.6821 4.73602 13.3567 4.41058C13.0312 4.08514 12.5036 4.08514 12.1782 4.41058L7.17816 9.41058C6.85272 9.73602 6.85272 10.2637 7.17816 10.5891L12.1782 15.5891C12.5036 15.9145 13.0312 15.9145 13.3567 15.5891C13.6821 15.2637 13.6821 14.736 13.3567 14.4106L8.94593 9.99984Z" fill="white"/>
-        </svg>
-      </button>
-    </div>
-    <section class="works-projects" id="works-carousel">
-      <div class="carousel-item carousel-on">
-        <picture>
-          <source media="(max-width: 440px)" srcset="<%= image_path('index/insomnia_api-small.png') %>" type="image/png">
-          <source media="(max-width: 1100px)" srcset="<%= image_path('index/insomnia_api-medium.png') %>" type="image/png">
-          <source media="(min-width: 1100px)" srcset="<%= image_path('index/insomnia_api-large.png') %>" type="image/png">
-          <img src="index/insomnia_api-large.png" alt="projeto" class="works-projects-image">
-        </picture>
+  <section class="works-content projectss-section">
+    <div class="owl-carousel custom-carousel owl-theme">
+      <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
+        <div class="item-desc">
+          <h3>Dota 2</h3>
+          <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
       </div>
-      <div class="carousel-item">
-        <picture>
-          <source media="(max-width: 440px)" srcset="<%= image_path('raw-images/applify-img.png') %>" type="image/png">
-          <source media="(max-width: 1100px)" srcset="<%= image_path('raw-images/applify-img.png') %>" type="image/png">
-          <source media="(min-width: 1100px)" srcset="<%= image_path('raw-images/applify-img.png') %>" type="image/png">
-          <img src="raw-images/applify-img.png" alt="Applify project" class="works-projects-image">
-        </picture>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
+        <div class="item-desc">
+          <h3>The Witcher 3</h3>
+          <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
+            of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
       </div>
-      <div class="carousel-item">
-        <picture>
-          <source media="(max-width: 440px)" srcset="<%= image_path('raw-images/ticket-event-img.png') %>" type="image/png">
-          <source media="(max-width: 1100px)" srcset="<%= image_path('raw-images/ticket-event-img.png') %>" type="image/png">
-          <source media="(min-width: 1100px)" srcset="<%= image_path('raw-images/ticket-event-img.png') %>" type="image/png">
-          <img src="raw-images/ticket-event-img.png" alt="Ticket event project" class="works-projects-image">
-        </picture>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg);">
+        <div class="item-desc">
+          <h3>RDR 2</h3>
+          <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
       </div>
-      <div class="carousel-item">
-        <picture>
-          <source media="(max-width: 440px)" srcset="<%= image_path('raw-images/editora-de-livros.png') %>" type="image/png">
-          <source media="(max-width: 1100px)" srcset="<%= image_path('raw-images/editora-de-livros.png') %>" type="image/png">
-          <source media="(min-width: 1100px)" srcset="<%= image_path('raw-images/editora-de-livros.png') %>" type="image/png">
-          <img src="raw-images/editora-de-livros.png" alt="Bibliotech projeto" class="works-projects-image">
-        </picture>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
+        <div class="item-desc">
+          <h3>PUBG Mobile</h3>
+          <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
       </div>
-    </section>
-    <div class="works-wrapper-button works-button-right">
-      <button class="works-button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-          <path d="M8.822 4.41058C8.49657 4.08514 7.96893 4.08514 7.64349 4.41058C7.31805 4.73602 7.31805 5.26366 7.64349 5.58909L12.0542 9.99984L7.64349 14.4106C7.31805 14.736 7.31805 15.2637 7.64349 15.5891C7.96893 15.9145 8.49657 15.9145 8.822 15.5891L13.822 10.5891C14.1474 10.2637 14.1474 9.73602 13.822 9.41058L8.822 4.41058Z" fill="white"/>
-        </svg>
-      </button>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
+        <div class="item-desc">
+          <h3>Fortnite</h3>
+          <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
+            for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+        <div class="item-desc">
+          <h3>Far Cry 5</h3>
+          <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+            which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
+      </div>
     </div>
   </section>
-
 </section>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script defer>
-    (function() {
-        let $worksButtonLeft = document.querySelector('.works-button-left');
-        let $worksButtonRight = document.querySelector('.works-button-right');
-        let $carouselItems = document.querySelectorAll('.carousel-item');
+    $(document).ready(function () {
+        var owl = $('.custom-carousel').owlCarousel({
+            autoWidth: true,
+            loop: true
+        });
 
-        let currentItem = 0;
-
-        function hideItem() {
-            $carouselItems.forEach(item => item.classList.remove('carousel-on'));
-        }
-
-        function showItem() {
-            $carouselItems[currentItem].classList.add('carousel-on');
-        }
-
-        function nextItem() {
-            hideItem();
-            if (currentItem === $carouselItems.length - 1) {
-                currentItem = 0;
-            } else {
-                currentItem++;
-            }
-            showItem();
-        }
-
-        function prevItem() {
-            hideItem();
-            if (currentItem === 0) {
-                currentItem = $carouselItems.length - 1;
-            } else {
-                currentItem--;
-            }
-            showItem();
-        }
-
-        $worksButtonRight.addEventListener('click', nextItem);
-        $worksButtonLeft.addEventListener('click', prevItem);
-    })();
+        $('.custom-carousel .item').on('click', function () {
+            $('.custom-carousel .item').not($(this)).removeClass('active');
+            $(this).toggleClass('active');
+        });
+    });
 </script>
