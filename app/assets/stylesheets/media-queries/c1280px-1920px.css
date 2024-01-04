@@ -103,6 +103,10 @@
     .skills-icons-line {
         gap: 7rem;
     }
+    .works-content {
+        margin: 0 auto;
+        max-width: 60rem;
+    }
     .contact-container {
         gap: 6rem;
         width: 56rem;
