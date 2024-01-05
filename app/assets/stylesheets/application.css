@@ -39,39 +39,39 @@
     --5-hex: #D6D58E;
 }
 
-.projectss-section {
+.projects-section {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
 .clear {
     clear: both;
 }
-.projectss-section img {
+.projects-section img {
     max-width: 100%;
     border: 0;
 }
-.projectss-section ul,
-.projectss-section ol {
+.projects-section ul,
+.projects-section ol {
     list-style: none;
 }
-.projectss-section a {
+.projects-section a {
     text-decoration: none;
     color: inherit;
     outline: none;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
 }
-.projectss-section a:focus,
-.projectss-section a:active,
-.projectss-section a:visited,
-.projectss-section a:hover {
+.projects-section a:focus,
+.projects-section a:active,
+.projects-section a:visited,
+.projects-section a:hover {
     text-decoration: none;
     outline: none;
 }
-.projectss-section a:hover {
+.projects-section a:hover {
     color: #e73700;
 }
-.projectss-section h2 {
+.projects-section h2 {
     margin-bottom: 48px;
     padding-bottom: 16px;
     font-size: 20px;
@@ -80,12 +80,12 @@
     position: relative;
     text-transform: capitalize;
 }
-.projectss-section h3 {
+.projects-section h3 {
     margin: 0 0 10px;
     font-size: 28px;
     line-height: 36px;
 }
-.projectss-section button {
+.projects-section button {
     outline: none !important;
 }
 .line-title {
@@ -111,7 +111,7 @@
 }
 
 .works-content {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 .works-content .owl-stage {
     margin: 15px 0;
@@ -135,7 +135,7 @@
     cursor: pointer;
 }
 .works-content .item.active {
-    width: 500px;
+    width: 600px;
     box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
 }
@@ -156,11 +156,13 @@
     z-index: 1;
     overflow: hidden;
     transform: translateY(calc(100% - 54px));
-    -webkit-transform: translateY(calc(100% - 54px));
+    -webkit-transform: translateY(calc(100% - 74px));
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
 }
 .works-content .item.active .item-desc {
+    display: flex;
+    flex-direction: column;
     transform: none;
     -webkit-transform: none;
 }
@@ -176,20 +178,32 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
+.carousel-item-buttons {
+    display: flex;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+.carousel-item-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.carousel-item-button > svg {
+    fill: white;
+}
 .works-content .owl-theme.custom-carousel .owl-dots {
     margin-top: -20px;
     position: relative;
     z-index: 5;
 }
-/******** Middle section CSS End *******/
-
-/***** responsive css Start ******/
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .projectss-section h2 {
+    .projects-section h2 {
         margin-bottom: 32px;
     }
-    .projectss-section h3 {
+    .projects-section h3 {
         margin: 0 0 8px;
         font-size: 24px;
         line-height: 32px;
@@ -214,10 +228,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .projectss-section h2 {
+    .projects-section h2 {
         margin-bottom: 32px;
     }
-    .projectss-section h3 {
+    .projects-section h3 {
         margin: 0 0 8px;
         font-size: 24px;
         line-height: 32px;
@@ -245,13 +259,13 @@
 }
 
 @media (max-width: 767px) {
-    .projectss-section {
+    .projects-section {
         font-size: 14px;
     }
-    .projectss-section h2 {
+    .projects-section h2 {
         margin-bottom: 20px;
     }
-    .projectss-section h3 {
+    .projects-section h3 {
         margin: 0 0 8px;
         font-size: 19px;
         line-height: 24px;
