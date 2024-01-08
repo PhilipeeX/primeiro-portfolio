@@ -105,23 +105,14 @@
     .works {
         padding: 4rem;
     }
-    .works-content {
-        padding: 2rem;
-        gap: 2rem;
+    .works-content .item {
+        width: 280px;
+        height: 240px;
     }
-    .works-wrapper-button {
-        padding: 1rem;
+    .works-content .item.active {
+        width: 320px;
     }
-    .works-button {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    .works-button svg {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    .works-projects {
-    }
+
     .contact-container {
         width: 45rem;
         align-self: center;

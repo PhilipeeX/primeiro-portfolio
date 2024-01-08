@@ -53,9 +53,12 @@
     .skills {
         height: 100dvh;
     }
-    .works-content {
-        margin: 0 auto;
-        max-width: 90rem;
+    .works-content .item {
+        width: 440px;
+        height: 400px;
+    }
+    .works-content .item.active {
+        width: 580px;
     }
     .contact-container {
         gap: 6rem;
