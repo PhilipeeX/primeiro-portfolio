@@ -35,8 +35,8 @@
         align-items: flex-start;
         gap: 1.5rem;
         position: fixed;
-        left: 9%;
-        top: 16%;
+        left: 7rem;
+        top: 10rem;
         border-radius: 2.5rem;
         border: 1px solid var(--White, #FFF);
         background: var(--BG-2, #1A1E23);
@@ -103,9 +103,27 @@
     .skills-icons-line {
         gap: 7rem;
     }
-    .works-content {
-        margin: 0 auto;
-        max-width: 60rem;
+    .works-content .item {
+        width: 380px;
+        height: 340px;
+    }
+    .works-content .item.active {
+        width: 420px;
+    }
+    .projects-section h3 {
+        margin: 0 0 20px;
+        font-size: 2.4rem;
+        line-height: 2.2rem;
+    }
+    .projects-section p,
+    .projects-section a {
+        font-size: 1rem;
+    }
+    .works-content .item-desc {
+        transform: translateY(calc(100% - 64px));
+        -webkit-transform: translateY(calc(100% - 64px));
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
     }
     .contact-container {
         gap: 6rem;

@@ -1,43 +1,40 @@
 en:
-  views:
-    welcome:
-      index:
-        title: 'Developer'
-        job-description: 'Full-stack developer'
-        country: 'Brazil'
-        curriculum: 'Download CV'
-        profile-description:
-          hey: 'Hey...'
-          i-am: "I'm "
-          job: 'Full-stack developer'
-          paragraph: 'Developer specialized in Ruby on Rails, focused on creating web applications. Whenever possible, I collaborate on open-source projects, always seeking to add value to the development community.'
-        lets-talk: "Let's Talk"
-        highlights:
-          languages-1: 'Programming'
-          languages-2: 'Languages'
-          tools-1: 'Development'
-          tools-2: 'tools'
-          experience-1: 'Years of'
-          experience-2: 'experience'
-        about-me: 'About me'
-        about-me-description:
-          hello: 'Hello!'
-          paragraph1: 'In 2021, I had the opportunity to learn more about the life of a classmate from my former English course, who worked as a game programmer in C#.'
-          paragraph2: 'This experience rekindled the passion I had for programming, and currently, I am studying Computer Science at Instituto Brasileiro de Medicina de Reabilitação (IBMR).'
-          paragraph3: 'I specialized in web development using the Ruby language, employing Rails as the framework.'
-          paragraph4: 'In addition to programming, I usually dedicate my time to brainstorming ideas for new projects or attending the gym to engage in physical activities, such as swimming.'
-          paragraph5: 'I have participated in some real team projects and am motivated to continue not only writing code but also adding value with ideas and solutions in freelance projects.'
-        skills: 'Skills'
-        skills-desc: 'I am striving to never stop learning and improving.'
-        projects: 'Projects'
-        projects-desc: 'I had the pleasure of developing or participating in the development of these projects.'
-        contact: 'Contact'
-        contact-desc: 'I’m currently available for remote work.'
-        messages: 'Send me a message'
-        person_name: 'Your name *'
-        person_mail: 'Your E-mail *'
-        message: 'Your message *'
-        send-message: 'Send message'
-        rights: 'All rights reserved'
-        privacy: 'Privacy policy'
-        terms: 'Terms and conditions'
+  welcome:
+    index:
+      title: 'Developer'
+      job-description: 'Full-stack developer'
+      country: 'Brazil'
+      curriculum: 'Download CV'
+      profile-description:
+        hey: 'Hey...'
+        i-am: "I'm "
+        job: 'Full-stack developer'
+        paragraph: 'Developer specialized in Ruby on Rails, focused on creating web applications. Whenever possible, I collaborate on open-source projects, always seeking to add value to the development community.'
+      lets-talk: "Let's Talk"
+      highlights:
+        languages-1: 'Programming'
+        languages-2: 'Languages'
+        tools-1: 'Development'
+        tools-2: 'tools'
+        experience-1: 'Years of'
+        experience-2: 'experience'
+      about-me: 'About me'
+      about-me-description:
+        hello: 'Hello!'
+        paragraph1: 'In 2021, I had the opportunity to learn more about the life of a classmate from my former English course, who worked as a game programmer in C#.'
+        paragraph2: 'This experience rekindled the passion I had for programming, and currently, I am studying Computer Science at Instituto Brasileiro de Medicina de Reabilitação (IBMR).'
+        paragraph3: 'I specialized in web development using the Ruby language, employing Rails as the framework.'
+        paragraph4: 'In addition to programming, I usually dedicate my time to brainstorming ideas for new projects or attending the gym to engage in physical activities, such as swimming.'
+        paragraph5: 'I have participated in some real team projects and am motivated to continue not only writing code but also adding value with ideas and solutions in freelance projects.'
+      skills: 'Skills'
+      skills-desc: 'I am striving to never stop learning and improving.'
+      contact: 'Contact'
+      contact-desc: 'I’m currently available for remote work.'
+      messages: 'Send me a message'
+      person_name: 'Your name *'
+      person_mail: 'Your E-mail *'
+      message: 'Your message *'
+      send-message: 'Send message'
+      rights: 'All rights reserved'
+      privacy: 'Privacy policy'
+      terms: 'Terms and conditions'
