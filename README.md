@@ -1,24 +1,27 @@
-# README
+<a name="topo-readme"></a>
+# Bem vindo ao Meu Portfólio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![GitHub repo size](https://img.shields.io/github/repo-size/PhilipeeX/primeiro-portfolio?style=for-the-badge&label=Tamanho&color=green)
+![GitHub contributors](https://img.shields.io/github/contributors/PhilipeeX/primeiro-portfolio?style=for-the-badge&color=green)
+![GitHub issues](https://img.shields.io/github/issues/PhilipeeX/primeiro-portfolio?style=for-the-badge)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/Philipeex/primeiro-portfolio?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/PhilipeeX/primeiro-portfolio?style=for-the-badge&label=Pull%20requests%20abertos)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/PhilipeeX/primeiro-portfolio?style=for-the-badge&label=Pull%20requests%20mergeados&color=purple)
+![GitHub License](https://img.shields.io/github/license/PhilipeeX/primeiro-portfolio?style=for-the-badge)
 
-Things you may want to cover:
 
-* Ruby version
+<img src="app/assets/images/raw-images/readme-portfolio-img.png" alt="Exemplo imagem">
 
-* System dependencies
+> Meu portfólio foi criado e está sendo desenvolvido com carinho para mostrar projetos que moldaram minha jornada profissional. De projetos open-source voluntários a trabalhos freelancers, e até mesmo criações inspiradas pelo puro prazer, cada página revela uma história única.
 
-* Configuration
+## Technologies
+* Ruby 3.1.2
+* Rails 7.0.8
+* PostgreSQL
 
-* Database creation
+## Link de deploy
+Acesse em: Em breve...
+##
+Author: <strong>Philipe Rodrigues (dev.philipe@outlook.com)</strong>
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<p align="right"><a href="#topo-readme">Voltar ao topo</a></p>
