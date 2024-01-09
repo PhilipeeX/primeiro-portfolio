@@ -86,3 +86,4 @@ production:
   database: primeiro_portfolio_production
   username: primeiro_portfolio
   password: <%= ENV["PRIMEIRO_PORTFOLIO_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
