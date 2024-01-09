@@ -10,7 +10,7 @@
 ![GitHub License](https://img.shields.io/github/license/PhilipeeX/primeiro-portfolio?style=for-the-badge)
 
 
-<img src="raw-images/readme-portfolio-img.png" alt="Exemplo imagem">
+<img src="app/assets/images/raw-images/readme-portfolio-img.png" alt="Exemplo imagem">
 
 > Meu portfólio foi criado e está sendo desenvolvido com carinho para mostrar projetos que moldaram minha jornada profissional. De projetos open-source voluntários a trabalhos freelancers, e até mesmo criações inspiradas pelo puro prazer, cada página revela uma história única.
 
