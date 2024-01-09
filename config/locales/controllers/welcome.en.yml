@@ -1,0 +1,4 @@
+en:
+  welcome:
+    success: 'Message sent successfully!'
+    failure: 'There was an error trying to send the message.'

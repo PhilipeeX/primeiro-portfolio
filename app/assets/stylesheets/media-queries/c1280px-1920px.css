@@ -1,0 +1,149 @@
+@media screen and (min-width: 1280px) {
+    header {
+        padding: 0 8rem;
+    }
+    .header-nav {
+        padding: 3rem 0;
+    }
+    .nav-bar {
+        gap: 4rem;
+    }
+    .nav-buttons {
+        gap: 2rem;
+    }
+    .logo-code {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.625rem;
+    }
+    .logo-name {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.625rem;
+    }
+    .nav-links a {
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+        text-transform: capitalize;
+    }
+    .navigation-bar {
+        display: flex;
+        padding: 0.3rem 0.15rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        position: fixed;
+        left: 7rem;
+        top: 10rem;
+        border-radius: 2.5rem;
+        border: 1px solid var(--White, #FFF);
+        background: var(--BG-2, #1A1E23);
+        z-index: 3;
+    }
+    .navigation-bar-button {
+        display: flex;
+        padding: 0.3rem;
+        align-items: flex-start;
+        border-radius: 2.5rem;
+        cursor: pointer;
+    }
+    .navigation-bar-button:hover {
+        background: var(--White, #FFF);
+    }
+    .navigation-bar-button svg {
+        display: flex;
+        width: 1.2rem;
+        height: 1.2rem;
+        justify-content: center;
+        align-items: center;
+        fill: var(--White);
+    }
+    .navigation-bar-button:hover svg {
+        fill: var(--BG-1);
+    }
+    .hero-section {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 6rem 4rem;
+    }
+    .hero-bg-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+    }
+    .hero-section-title {
+        color: var(--Brand-2, #44FF27);
+        font-family: Ubuntu;
+        font-size: 7.3125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 8.375rem;
+        text-transform: capitalize;
+    }
+    .profile-right {
+        flex-direction: row;
+    }
+    .about-me-container {
+        flex-direction: column;
+    }
+    .about-me-description {
+        max-width: 52rem;
+    }
+    .skills-cards {
+        gap: 4rem;
+    }
+    .skills-icons {
+        flex-direction: row;
+        gap: 7rem;
+        margin: 5rem 0;
+    }
+    .skills-icons-line {
+        gap: 7rem;
+    }
+    .works-content .item {
+        width: 380px;
+        height: 340px;
+    }
+    .works-content .item.active {
+        width: 420px;
+    }
+    .projects-section h3 {
+        margin: 0 0 20px;
+        font-size: 2.4rem;
+        line-height: 2.2rem;
+    }
+    .projects-section p,
+    .projects-section a {
+        font-size: 1rem;
+    }
+    .works-content .item-desc {
+        transform: translateY(calc(100% - 64px));
+        -webkit-transform: translateY(calc(100% - 64px));
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+    }
+    .contact-container {
+        gap: 6rem;
+        width: 56rem;
+        align-self: center;
+    }
+    .send-message-title h6 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.625rem;
+    }
+    .send-message-info {
+        padding: 0 10rem;
+    }
+    .footer-container {
+        flex-direction: row;
+        padding: 0 8.5rem;
+        justify-content: space-between;
+    }
+    .footer-media {
+        order: 1;
+    }
+}

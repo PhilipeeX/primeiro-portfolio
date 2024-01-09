@@ -1,0 +1,72 @@
+@media screen and (min-width: 1920px) {
+    .header-nav {
+        width: 1660px;
+        align-self: center;
+    }
+    .nav-buttons > .nav-button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .nav-button > svg {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .nav-button > p{
+        display: inline;
+        color: var(--White, var(--White, #FFF));
+        font-family: IBM Plex Mono;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        text-transform: capitalize;
+    }
+    .navigation-bar {
+        padding: 0.5rem 0.35rem;
+    }
+    .navigation-bar-button {
+        padding: 0.5rem;
+    }
+    .navigation-bar-button svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .hero-section {
+        padding: 0 4rem 8rem 4rem;
+        height: 100dvh;
+    }
+    .content {
+        flex-direction: row;
+        gap: 6rem;
+    }
+    .profile-right {
+        gap: 6rem;
+    }
+    .about-me {
+        height: 90dvh;
+    }
+    .about-me-container {
+        flex-direction: row;
+        gap: 7rem;
+    }
+    .skills {
+        height: 100dvh;
+    }
+    .works-content .item {
+        width: 440px;
+        height: 400px;
+    }
+    .works-content .item.active {
+        width: 580px;
+    }
+    .contact-container {
+        gap: 6rem;
+        width: 80rem;
+        align-self: center;
+    }
+    .footer {
+        width: 1660px;
+        align-self: center;
+    }
+}

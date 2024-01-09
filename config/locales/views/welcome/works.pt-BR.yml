@@ -1,0 +1,12 @@
+pt-BR:
+  welcome:
+    works:
+      projects: 'Projetos'
+      projects-desc: 'Eu tive o prazer de desenvolver ou de participar do desenvolvimento desses projetos.'
+      github: 'Github'
+      website: 'Website'
+      ticket_event: 'Desenvolvimento de uma solução que capacita infoprodutores a ampliar a captação de participantes em eventos por meio de uma plataforma online de fácil utilização.'
+      applify_description: 'Criando uma plataforma que simplifica a busca por vagas em desenvolvimento de software usando arquitetura MVC, metodologia Scrum e TDD. Processos automatizados, criando uma experiência eficiente e transparente para candidatos e recrutadores.'
+      bibliotech_description: 'Um projeto especial desenvolvido como parte das tarefas da mentoria Desenvolvendome! Esse projeto teve como objetivo proporcionar-me uma oportunidade prática de evoluir e aprimorar minhas habilidades em desenvolvimento web com Ruby on Rails.'
+      developer_evolution: 'Esse projeto foi iniciado com o objetivo de auxiliar desenvolvedores a medir seu progresso e atingir objetivos no desenvolvimento de software. Oferece uma variedade de métricas e recursos personalizáveis para permitir que os usuários avaliem seu desempenho, identifiquem áreas de melhoria e estabeleçam metas alcançáveis.'
+      contact_list: 'Esta é uma aplicação web de lista de contatos desenvolvida em Ruby on Rails. A aplicação permite criar usuários, adicionar contatos à lista de cada usuário, remover contatos e editar informações dos usuários.'
