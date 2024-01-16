@@ -7,10 +7,10 @@ class WelcomeController < ApplicationController
     @message = Message.new(message_params)
     if @message.save
       flash[:success] = t('.success')
-      redirect_to welcome_path
+      redirect_to welcome_index_path
     else
       flash[:error] = t('.failure')
-      redirect_to welcome_path
+      redirect_to welcome_index_path
     end
   end
 
